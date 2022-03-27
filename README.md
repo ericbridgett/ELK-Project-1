@@ -53,7 +53,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the ELK-Stack machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address:
 - _47.132.64.144_
 
 Machines within the network can only be accessed by Jumpbox.
