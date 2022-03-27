@@ -109,7 +109,7 @@ These Beats allow us to collect the following information from each machine:
 
 - Metricbeat collects more "metric" type of data. This includes CPU usage, memory, and other data that has to do with different services running on the server(s).
   The image below shows what some of the metric data Metricbeat provides via CPU and Memory for both Web-1 and Web-2.
-![Metricbeat-Pic]()
+![Metricbeat-Pic](Screenshots/Metricbeat.png)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
