@@ -1,5 +1,5 @@
 # ELK-Project-1
-=======
+================
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
@@ -79,9 +79,12 @@ _What is the main advantage of automating configuration with Ansible?_
   for future configuration. It also helps represent Infrastructure as Code (IAC) very well.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+
+- Install Docker which is the platform for containerization.
+- Install Python3 pip to manage and install software packages.
+- Increase virtual memory in order for ELK to properly run.
+- Download and launch a docker ELK container.
+- Run ELK on the specified ports 5601:5601
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
