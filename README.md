@@ -32,8 +32,12 @@ _What aspect of security do load balancers protect? What is the advantage of a j
   tied down to a specific Virtual Machine or server, it is versatile and allows for accessibility.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+
+_What does Filebeat watch for?_
+-Filebeat monitors the log files that are specified, collects log events, and can forward them either to Elasticsearch or Logstash.
+
+_What does Metricbeat record?_
+-Metricbeat records the metrics and statistics from your servers, like CPU and memory usage, and outputs it to Elasticsearch or Logstash, similar to Filebeat.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
