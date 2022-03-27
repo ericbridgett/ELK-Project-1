@@ -1,5 +1,4 @@
 # ELK-Project-1
-<<<<<<< HEAD
 =======
 ## Automated ELK Stack Deployment
 
