@@ -134,7 +134,15 @@ _Where do you copy it?_
 
 - Filebeat is copied from `/etc/ansible/files/filebeat-config.yml` to `/etc/filebeat/filebeat.yml`
 - Metricbeat is copied from `/etc/ansible/files/metricbeat-config.yml` to `/etc/metricbeat/metricbeat.yml` 
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+
+_Which file do you update to make Ansible run the playbook on a specific machine? 
+
+- You must update the `hosts` file as shown above. Specifying the IP addresses under either (Webservers) or (elk)
+  will allow Ansible to determine which machine(s) to run on.
+  
+_How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+
+- 
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
