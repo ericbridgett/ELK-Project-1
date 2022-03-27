@@ -122,7 +122,7 @@ SSH into the control node and follow the steps below:
 - The images below should ensure all three playbooks were ran successfully via Kibana:
 ![Kibana](Screenshots/Project1.7.png)
 ![File](Screenshots/Project1.8.png)
-![Metric]()
+![Metric](Screenshots/Project1.9.png)
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
