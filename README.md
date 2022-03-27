@@ -119,8 +119,10 @@ SSH into the control node and follow the steps below:
 - Update the `hosts` file to include the (Webservers) and (elk).
 ![host-file](Screenshots/Project1.5.png)
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
-- The images below should ensure all three playbooks were ran successfully via Kibana:
-![Kibana](Screenshots/Project1.7.png)
+- The images below should ensure all three playbooks were ran successfully and are ensured with Kibana:
+![ELK-Install]()
+![FB-Install]()
+![MB-Install]()
 ![File](Screenshots/Project1.8.png)
 ![Metric](Screenshots/Project1.9.png)
 
@@ -138,12 +140,16 @@ _Where do you copy it?_
 _Which file do you update to make Ansible run the playbook on a specific machine? 
 
 - You must update the `hosts` file as shown above. Specifying the IP addresses under either (Webservers) or (elk)
-  will allow Ansible to determine which machine(s) to run on.
+  will allow Ansible to determine which machine(s) to run on. Following this you should update your playbooks.
   
 _How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 
-- 
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- After adjusting your `hosts` file and having created (Webservers) and (elk) to specify certain IP addresses
+  belong. Now at the top of your install-elk.yml playbook where it says hosts you should list (elk) to designate that machine.
+  Whereas on the filebeat-playbook.yml where it says hosts, you should list (Webservers) so that the playbook deploys to Web-1 and Web-2.
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
->>>>>>> 7f6b67f (First commit)
+_Which URL do you navigate to in order to check that the ELK server is running?
+
+- You need to navigate to http://[Your-ELK-Public-IP]:5601/app/kibana 
+- If successful it will show this:
+![Kibana](Screenshots/Project1.7.png)  
