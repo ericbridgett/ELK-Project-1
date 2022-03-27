@@ -65,10 +65,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses   |
 |----------|---------------------|------------------------|
-| Jump Box | No                  | 47.132.64.144          |
+| Jump Box | Yes                 | 47.132.64.144          |
 | Web-1    | No                  | 10.0.0.4               |
 | Web-2    | No                  | 10.0.0.4               |
-| Red-LB   | Yes                 | 20.228.187.131         |
+| Red-LB   | Yes                 | 47.132.64.144          |
 | ELK-Stack| Yes                 | 47.132.64.144, 10.0.0.4|
 
 ### Elk Configuration
