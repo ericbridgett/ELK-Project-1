@@ -115,10 +115,14 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the  file to _____.
-- Update the `hosts` file to include the (Webservers) and (elk)
+- Copy the config file to Web-1 and Web-2 (Will be done in Playbook).
+- Update the `hosts` file to include the (Webservers) and (elk).
 ![host-file](Screenshots/Project1.5.png)
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Run the playbook, and navigate to Kibana to check that the installation worked as expected.
+- The images below should ensure all three playbooks were ran successfully via Kibana:
+![Kibana]()
+![File]()
+![Metric]()
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
