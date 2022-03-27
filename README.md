@@ -27,11 +27,11 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting restricting access to the network.
 
-_What aspect of security do load balancers protect? What is the advantage of a jump box?_ 
+What aspect of security do load balancers protect? What is the advantage of a jump box? 
 - Load balancers ensure availability of servers and applications. The advantage of a jump box is ability to jump between servers without being 
   tied down to a specific Virtual Machine or server, it is versatile and allows for accessibility.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the metrics and system logs.
 
 _What does Filebeat watch for?_
 - Filebeat monitors the log files that are specified, collects log events, and can forward them either to Elasticsearch or Logstash.
@@ -58,7 +58,7 @@ Only the ELK-Stack machine can accept connections from the Internet. Access to t
 
 Machines within the network can only be accessed by Jumpbox.
 
-_Which machine did you allow to access your ELK VM? What was its IP address?_
+Which machine did you allow to access your ELK VM? What was its IP address?
 - I allowed my PC to access the ELK VM and its IP is 47.132.64.144
 
 A summary of the access policies in place can be found in the table below.
@@ -73,8 +73,8 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-_What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually.
+What is the main advantage of automating configuration with Ansible?
 - The main advantage of automating configuration with Ansible is how easily it can be recreated and used
   for future configuration. It also helps represent Infrastructure as Code (IAC) very well.
 
@@ -121,9 +121,15 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
  
 - The images below should ensure all three playbooks were ran successfully and are ensured with Kibana:
+ELK-Playbook:
+
 ![ELK-Install](Screenshots/Project1.6.png)
 
+Filebeat-Playbook:
+
 ![FB-Install](Screenshots/Project1.11.png)
+
+Metricbeat-Playbook:
 
 ![MB-Install](Screenshots/Project1.10.png)
 
@@ -131,29 +137,29 @@ SSH into the control node and follow the steps below:
 
 ![Metric](Screenshots/Project1.9.png)
 
-_Which file is the playbook?
+Which file is the playbook?
 
 - filebeat-playbook.yml
 - metricbeat-playbook.yml
  
-_Where do you copy it?_
+Where do you copy it?
 
 - Filebeat is copied from `/etc/ansible/files/filebeat-config.yml` to `/etc/filebeat/filebeat.yml`
 - Metricbeat is copied from `/etc/ansible/files/metricbeat-config.yml` to `/etc/metricbeat/metricbeat.yml` 
 
-_Which file do you update to make Ansible run the playbook on a specific machine? 
+Which file do you update to make Ansible run the playbook on a specific machine? 
 
 - You must update the `hosts` file as shown above. Specifying the IP addresses under either (Webservers) or (elk)
   will allow Ansible to determine which machine(s) to run on. Following this you should update your playbooks.
   
-_How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
 - After adjusting your `hosts` file and having created (Webservers) and (elk) to specify certain IP addresses
   belong. Now at the top of your install-elk.yml playbook where it says hosts you should list (elk) to designate that machine.
   Whereas on the filebeat-playbook.yml where it says hosts, you should list (Webservers) so that the playbook deploys to Web-1 and Web-2.
 
-_Which URL do you navigate to in order to check that the ELK server is running?
+Which URL do you navigate to in order to check that the ELK server is running?
 
 - You need to navigate to http://[Your-ELK-Public-IP]:5601/app/kibana 
 - If successful it will show this:
-![Kibana](Screenshots/Project1.7.png)  
+![Kibana](Screenshots/Project1.7.png)
