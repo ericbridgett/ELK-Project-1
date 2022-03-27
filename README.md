@@ -102,7 +102,7 @@ We have installed the following Beats on these machines:
 - Metricbeat 
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
 - Filebeat collects a lot of "log" type data. For instance, it can collect system logs, audit logs, deprecation logs and many more. The image below shows
   an example of what to expect when looking at system logs. This particular image shows details about Web-2 and gives messages on what was occuring.
 ![SysLog-Pic](Screenshots/Filebeat.png)
@@ -116,7 +116,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the _____ file to _____.
-- Update the _____ file to include...
+- Update the `hosts` file to include the (Webservers) and (elk)
+![host-file]()
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
