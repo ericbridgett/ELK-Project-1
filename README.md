@@ -120,13 +120,12 @@ SSH into the control node and follow the steps below:
 ![host-file](Screenshots/Project1.5.png)
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 - The images below should ensure all three playbooks were ran successfully and are ensured with Kibana:
-![ELK-Install]()
-![FB-Install]()
-![MB-Install]()
+![ELK-Install](Screenshots/Project1.6.png)
+![FB-Install](Screenshots/Project1.11.png)
+![MB-Install](Screenshots/Project1.10.png)
 ![File](Screenshots/Project1.8.png)
 ![Metric](Screenshots/Project1.9.png)
 
-_TODO: Answer the following questions to fill in the blanks:_
 _Which file is the playbook?
 
 - filebeat-playbook.yml
