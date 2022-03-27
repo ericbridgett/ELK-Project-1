@@ -121,7 +121,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 - The images below should ensure all three playbooks were ran successfully via Kibana:
 ![Kibana](Screenshots/Project1.7.png)
-![File]()
+![File](Screenshots/Project1.8.png)
 ![Metric]()
 
 _TODO: Answer the following questions to fill in the blanks:_
