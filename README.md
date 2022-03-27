@@ -1,5 +1,5 @@
 # ELK-Stack-Project
-================
+===================
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
@@ -140,8 +140,8 @@ SSH into the control node and follow the steps below:
 
 Which file is the playbook?
 
-- filebeat-playbook.yml
-- metricbeat-playbook.yml
+- _filebeat-playbook.yml_
+- _metricbeat-playbook.yml_
  
 Where do you copy it?
 
