@@ -132,7 +132,8 @@ _Which file is the playbook?
  
 _Where do you copy it?_
 
--  
+- Filebeat is copied from `/etc/ansible/files/filebeat-config.yml` to `/etc/filebeat/filebeat.yml`
+- Metricbeat is copied from `/etc/ansible/files/metricbeat-config.yml` to `/etc/metricbeat/metricbeat.yml` 
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
