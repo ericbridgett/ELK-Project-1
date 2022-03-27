@@ -65,16 +65,18 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses   |
 |----------|---------------------|------------------------|
-| Jump Box | Yes/No              | 47.132.64.144          |
+| Jump Box | No                  | 47.132.64.144          |
 | Web-1    | No                  | 10.0.0.4               |
 | Web-2    | No                  | 10.0.0.4               |
-| Red-LB   | No                  | 20.228.187.131         |
+| Red-LB   | Yes                 | 20.228.187.131         |
 | ELK-Stack| Yes                 | 47.132.64.144, 10.0.0.4|
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+_What is the main advantage of automating configuration with Ansible?_
+- The main advantage of automating configuration with Ansible is how easily it can be recreated and used
+  for future configuration. It also helps represent Infrastructure as Code (IAC) very well.
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
