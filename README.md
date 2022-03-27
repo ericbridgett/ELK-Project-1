@@ -122,15 +122,15 @@ SSH into the control node and follow the steps below:
  
 - The images below should ensure all three playbooks were ran successfully and are ensured with Kibana:
 
-####ELK-Playbook:
+#### ELK-Playbook:
 
 ![ELK-Install](Screenshots/Project1.6.png)
 
-####Filebeat-Playbook:
+#### Filebeat-Playbook:
 
 ![FB-Install](Screenshots/Project1.11.png)
 
-####Metricbeat-Playbook:
+#### Metricbeat-Playbook:
 
 ![MB-Install](Screenshots/Project1.10.png)
 
