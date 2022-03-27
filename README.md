@@ -34,10 +34,10 @@ _What aspect of security do load balancers protect? What is the advantage of a j
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 
 _What does Filebeat watch for?_
--Filebeat monitors the log files that are specified, collects log events, and can forward them either to Elasticsearch or Logstash.
+- Filebeat monitors the log files that are specified, collects log events, and can forward them either to Elasticsearch or Logstash.
 
 _What does Metricbeat record?_
--Metricbeat records the metrics and statistics from your servers, like CPU and memory usage, and outputs it to Elasticsearch or Logstash, similar to Filebeat.
+- Metricbeat records the metrics and statistics from your servers, like CPU and memory usage, and outputs it to Elasticsearch or Logstash, similar to Filebeat.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -59,7 +59,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 Machines within the network can only be accessed by Jumpbox.
 
 _Which machine did you allow to access your ELK VM? What was its IP address?_
--I allowed my PC to access the ELK VM and its IP is 47.132.64.144
+- I allowed my PC to access the ELK VM and its IP is 47.132.64.144
 
 A summary of the access policies in place can be found in the table below.
 
@@ -70,6 +70,7 @@ A summary of the access policies in place can be found in the table below.
 | Web-2    | No                  | 10.0.0.4               |
 | Red-LB   | No                  | 20.228.187.131         |
 | ELK-Stack| Yes                 | 47.132.64.144, 10.0.0.4|
+
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
